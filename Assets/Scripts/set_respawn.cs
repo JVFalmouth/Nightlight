@@ -9,6 +9,7 @@ public class set_respawn : MonoBehaviour
         if ("Bat_PH" == other.gameObject.name)
         {
             other.GetComponent<fear_script>().respawn = gameObject.transform.position;
+            other.GetComponent<fear_script>().respawn.z = 1;
         }
     }
 }
