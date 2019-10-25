@@ -36,23 +36,5 @@ public class Text_Display : MonoBehaviour
 
             }
         }
-        else
-        {
-            if (Player.GetComponent<fear_script>().isTouchingLight == true)
-            {
-                Window.SetActive(true);
-                dialogue.text = "Whew, that was tough";
-                StartCoroutine(speak_time());
-            }
-            else
-            {
-                Window.SetActive(false);
-            }
-        }
-    }
-    IEnumerator speak_time()
-    {
-        yield return new WaitForSeconds(1);
-        Window.SetActive(false);
     }
 }
