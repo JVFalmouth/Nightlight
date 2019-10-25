@@ -13,6 +13,12 @@ public class owl_move_script : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var audio = gameObject.GetComponent<AudioSource>();
+        audio.Play();
+    }
+
     // Update is called once per frame
     void OnTriggerStay2D(Collider2D other)
     {
