@@ -13,12 +13,11 @@ public class Move_Camera : MonoBehaviour
         {
             if (other.GetComponent<Transform>().position.x > gameObject.transform.position.x)
             {
-
-                transform.Translate(Vector3.right * velocity.x * Time.deltaTime);
+                transform.Translate(Vector3.right * Mathf.Abs(velocity.x) * Time.deltaTime);
             }
             else
             {
-                transform.Translate(Vector3.left * -(velocity.x) *  Time.deltaTime);
+                transform.Translate(Vector3.left * Mathf.Abs(velocity.x) *  Time.deltaTime);
             }
         }
     }
