@@ -34,7 +34,7 @@ public class owl_move_script : MonoBehaviour
             rb2d.AddForce(dir * 10);
         }
     }
-    private void OnCollisionStay2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
