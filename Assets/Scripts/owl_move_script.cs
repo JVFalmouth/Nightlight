@@ -6,6 +6,7 @@ public class owl_move_script : MonoBehaviour
 {
 
     private Rigidbody2D rb2d;
+    public AudioSource screach;
 
     // Start is called before the first frame update
     void Start()
@@ -13,10 +14,12 @@ public class owl_move_script : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        var audio = gameObject.GetComponent<AudioSource>();
-        audio.Play();
+        if (other.gameObject.tag == "Player")
+        {
+            screach.Play();
+        }
     }
 
     // Update is called once per frame
