@@ -22,5 +22,4 @@ public class Move_Camera : MonoBehaviour
             }
         }
     }
-
 }
