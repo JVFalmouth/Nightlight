@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class bat_enter_script : MonoBehaviour
 {
+    private void Start()
+    {
+        Physics2D.IgnoreLayerCollision(8, 9);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if ("Bat_PH" == other.gameObject.name)

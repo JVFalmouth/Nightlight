@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605854599}
   - component: {fileID: 605854600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 1913907145}
   - component: {fileID: 1913907144}
   - component: {fileID: 1913907143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: batMove_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 61911381732682564}
   - component: {fileID: 61911381732682562}
   - component: {fileID: 61911381732682565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bat_PH
   m_TagString: Player
   m_Icon: {fileID: 0}
